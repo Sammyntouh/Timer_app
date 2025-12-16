@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudyFocus – Timer Intelligent</title>
+
+    <!-- Lien CSS (à créer plus tard) -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+        <h1>📚 StudyFocus</h1>
+        <p>Optimise ta concentration et ta mémorisation</p>
+    </header>
+
+    <!-- SECTION PRINCIPALE -->
+    <main class="container">
+
+        <!-- INTRO -->
+        <section class="intro">
+            <h2>Bienvenue 👋</h2>
+            <p>
+                Cette application analyse ton niveau de concentration et ta capacité de mémorisation
+                afin de te proposer un programme d’étude personnalisé.
+            </p>
+        </section>
+
+        <!-- BOUTON DÉMARRAGE QUIZ -->
+        <section class="start-quiz">
+            <h3>Test de diagnostic</h3>
+            <p>Commence par un quiz rapide (2–3 minutes).</p>
+            <button id="startQuizBtn">Commencer le quiz</button>
+        </section>
+
+        <!-- ZONE QUIZ (cachée au départ) -->
+        <section id="quizSection" class="quiz hidden">
+            <h3>Quiz de concentration</h3>
+
+            <form id="quizForm">
+                <!-- Question 1 -->
+                <div class="question">
+                    <p>1. Combien de temps peux-tu étudier sans distraction ?</p>
+                    <label><input type="radio" name="q1" value="1"> Moins de 15 minutes</label><br>
+                    <label><input type="radio" name="q1" value="2"> 20 à 30 minutes</label><br>
+                    <label><input type="radio" name="q1" value="3"> Plus de 45 minutes</label>
+                </div>
+
+                <!-- Question 2 -->
+                <div class="question">
+                    <p>2. Après un cours, te rappelles-tu facilement des notions clés ?</p>
+                    <label><input type="radio" name="q2" value="1"> Difficilement</label><br>
+                    <label><input type="radio" name="q2" value="2"> Moyennement</label><br>
+                    <label><input type="radio" name="q2" value="3"> Très facilement</label>
+                </div>
+
+                <!-- Bouton soumission -->
+                <button type="submit">Valider le quiz</button>
+            </form>
+        </section>
+
+        <!-- RÉSULTAT DU QUIZ -->
+        <section id="resultSection" class="result hidden">
+            <h3>Résultat du diagnostic</h3>
+            <p id="concentrationResult"></p>
+            <p id="memoryResult"></p>
+
+            <button id="startTimerBtn">Démarrer le programme d’étude</button>
+        </section>
+
+        <!-- TIMER -->
+        <section id="timerSection" class="timer hidden">
+            <h3>⏱️ Session d’étude</h3>
+            <div class="time-display" id="timeDisplay">25:00</div>
+
+            <div class="timer-controls">
+                <button id="startBtn">Démarrer</button>
+                <button id="pauseBtn">Pause</button>
+                <button id="resetBtn">Réinitialiser</button>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <p>© 2025 StudyFocus – Tous droits réservés</p>
+    </footer>
+
+    <!-- Lien JS (à créer plus tard) -->
+    <script src="script.js"></script>
+
+</body>
+</html>
