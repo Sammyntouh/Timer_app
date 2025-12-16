@@ -115,3 +115,14 @@ resetBtn.addEventListener("click", () => {
     timer = null;
     updateDisplay();
 });
+
+// ==========================
+// REDIRECTION VERS FEEDBACK
+// ==========================
+const feedbackBtn = document.getElementById("feedbackBtn");
+
+if (feedbackBtn) {
+    feedbackBtn.addEventListener("click", () => {
+        window.location.href = "feedback.html";
+    });
+}
