@@ -116,6 +116,7 @@ resetBtn.addEventListener("click", () => {
     updateDisplay();
 });
 
+
 // ==========================
 // REDIRECTION VERS FEEDBACK
 // ==========================

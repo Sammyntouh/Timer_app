@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback – StudyFocus</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+        <h1>📝 Feedback</h1>
+        <p>Dis-nous comment s’est passée ta session d’étude</p>
+    </header>
+
+    <main class="container">
+
+        <section>
+            <h3>Auto-évaluation</h3>
+
+            <form id="feedbackForm">
+
+                <div class="question">
+                    <p>1. Ton niveau de concentration pendant la session ?</p>
+                    <label><input type="radio" name="focus" value="1"> Faible</label>
+                    <label><input type="radio" name="focus" value="2"> Moyen</label>
+                    <label><input type="radio" name="focus" value="3"> Élevé</label>
+                </div>
+
+                <div class="question">
+                    <p>2. As-tu compris les notions étudiées ?</p>
+                    <label><input type="radio" name="understanding" value="1"> Peu</label>
+                    <label><input type="radio" name="understanding" value="2"> Moyennement</label>
+                    <label><input type="radio" name="understanding" value="3"> Très bien</label>
+                </div>
+
+                <div class="question">
+                    <p>3. Commentaires (optionnel)</p>
+                    <textarea rows="4" style="width:100%; padding:10px;"></textarea>
+                </div>
+
+                <button type="submit">Envoyer le feedback</button>
+            </form>
+        </section>
+
+        <section style="text-align:center;">
+            <button onclick="window.location.href='index.html'">
+                ⬅ Retour à l’accueil
+            </button>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <p>© 2025 StudyFocus</p>
+    </footer>
+
+</body>
+</html>
