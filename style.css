@@ -235,3 +235,14 @@ footer {
     text-align: center;
     margin-top: 20px;
 }
+/* AUTH BUTTON */
+.auth-btn {
+    margin-top: 1rem;
+    background: white;
+    color: var(--primary);
+    font-weight: bold;
+}
+
+.auth-btn:hover {
+    background: #eef2ff;
+}

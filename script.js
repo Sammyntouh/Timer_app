@@ -127,3 +127,19 @@ if (feedbackBtn) {
         window.location.href = "feedback.html";
     });
 }
+// ==========================
+// AUTHENTIFICATION
+// ==========================
+const authBtn = document.getElementById("authBtn");
+
+if (authBtn) {
+    authBtn.addEventListener("click", () => {
+        window.location.href = "Leubo.html";
+    });
+}
+if (!isAuthenticated) {
+    window.location.href = "Leubo.html";
+}
+
+// Exemple après connexion réussie
+window.location.href = "dashboard.html";
